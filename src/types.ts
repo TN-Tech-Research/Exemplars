@@ -8,5 +8,6 @@ export interface PosterRecord {
   pdf_filename: string
   image_filename: string
   image_path: string
+  display_path: string
   manifest_path: string
 }

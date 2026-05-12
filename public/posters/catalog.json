@@ -11,6 +11,7 @@
     "pdf_filename": "AHE-2.pdf",
     "image_filename": "AHE-2.png",
     "image_path": "posters/AHE-2.png",
+    "display_path": "posters/display/AHE-2.webp",
     "manifest_path": "posters/AHE-2.json"
   },
   {
@@ -26,6 +27,7 @@
     "pdf_filename": "AHE-51.pdf",
     "image_filename": "AHE-51.png",
     "image_path": "posters/AHE-51.png",
+    "display_path": "posters/display/AHE-51.webp",
     "manifest_path": "posters/AHE-51.json"
   },
   {
@@ -40,6 +42,7 @@
     "pdf_filename": "AHE-7.pdf",
     "image_filename": "AHE-7.png",
     "image_path": "posters/AHE-7.png",
+    "display_path": "posters/display/AHE-7.webp",
     "manifest_path": "posters/AHE-7.json"
   },
   {
@@ -55,6 +58,7 @@
     "pdf_filename": "ASC-122.pdf",
     "image_filename": "ASC-122.png",
     "image_path": "posters/ASC-122.png",
+    "display_path": "posters/display/ASC-122.webp",
     "manifest_path": "posters/ASC-122.json"
   },
   {
@@ -69,6 +73,7 @@
     "pdf_filename": "ASC-126.pdf",
     "image_filename": "ASC-126.png",
     "image_path": "posters/ASC-126.png",
+    "display_path": "posters/display/ASC-126.webp",
     "manifest_path": "posters/ASC-126.json"
   },
   {
@@ -83,6 +88,7 @@
     "pdf_filename": "ASC-127.pdf",
     "image_filename": "ASC-127.png",
     "image_path": "posters/ASC-127.png",
+    "display_path": "posters/display/ASC-127.webp",
     "manifest_path": "posters/ASC-127.json"
   },
   {
@@ -98,6 +104,7 @@
     "pdf_filename": "ASC-260.pdf",
     "image_filename": "ASC-260.png",
     "image_path": "posters/ASC-260.png",
+    "display_path": "posters/display/ASC-260.webp",
     "manifest_path": "posters/ASC-260.json"
   },
   {
@@ -114,6 +121,7 @@
     "pdf_filename": "ASC-81.pdf",
     "image_filename": "ASC-81.png",
     "image_path": "posters/ASC-81.png",
+    "display_path": "posters/display/ASC-81.webp",
     "manifest_path": "posters/ASC-81.json"
   },
   {
@@ -128,6 +136,7 @@
     "pdf_filename": "ASC-83.pdf",
     "image_filename": "ASC-83.png",
     "image_path": "posters/ASC-83.png",
+    "display_path": "posters/display/ASC-83.webp",
     "manifest_path": "posters/ASC-83.json"
   },
   {
@@ -143,6 +152,7 @@
     "pdf_filename": "ASC-91.pdf",
     "image_filename": "ASC-91.png",
     "image_path": "posters/ASC-91.png",
+    "display_path": "posters/display/ASC-91.webp",
     "manifest_path": "posters/ASC-91.json"
   },
   {
@@ -159,6 +169,7 @@
     "pdf_filename": "CEI-135.pdf",
     "image_filename": "CEI-135.png",
     "image_path": "posters/CEI-135.png",
+    "display_path": "posters/display/CEI-135.webp",
     "manifest_path": "posters/CEI-135.json"
   },
   {
@@ -173,6 +184,7 @@
     "pdf_filename": "EDU-149.pdf",
     "image_filename": "EDU-149.png",
     "image_path": "posters/EDU-149.png",
+    "display_path": "posters/display/EDU-149.webp",
     "manifest_path": "posters/EDU-149.json"
   },
   {
@@ -187,6 +199,7 @@
     "pdf_filename": "EDU-159.pdf",
     "image_filename": "EDU-159.png",
     "image_path": "posters/EDU-159.png",
+    "display_path": "posters/display/EDU-159.webp",
     "manifest_path": "posters/EDU-159.json"
   },
   {
@@ -204,6 +217,7 @@
     "pdf_filename": "ENG-148.pdf",
     "image_filename": "ENG-148.png",
     "image_path": "posters/ENG-148.png",
+    "display_path": "posters/display/ENG-148.webp",
     "manifest_path": "posters/ENG-148.json"
   },
   {
@@ -220,6 +234,7 @@
     "pdf_filename": "ENG-170.pdf",
     "image_filename": "ENG-170.png",
     "image_path": "posters/ENG-170.png",
+    "display_path": "posters/display/ENG-170.webp",
     "manifest_path": "posters/ENG-170.json"
   },
   {
@@ -234,6 +249,7 @@
     "pdf_filename": "ENG-182.pdf",
     "image_filename": "ENG-182.png",
     "image_path": "posters/ENG-182.png",
+    "display_path": "posters/display/ENG-182.webp",
     "manifest_path": "posters/ENG-182.json"
   },
   {
@@ -248,6 +264,7 @@
     "pdf_filename": "ENG-184.pdf",
     "image_filename": "ENG-184.png",
     "image_path": "posters/ENG-184.png",
+    "display_path": "posters/display/ENG-184.webp",
     "manifest_path": "posters/ENG-184.json"
   },
   {
@@ -262,6 +279,7 @@
     "pdf_filename": "ENG-186.pdf",
     "image_filename": "ENG-186.png",
     "image_path": "posters/ENG-186.png",
+    "display_path": "posters/display/ENG-186.webp",
     "manifest_path": "posters/ENG-186.json"
   },
   {
@@ -276,6 +294,7 @@
     "pdf_filename": "ENG-189.pdf",
     "image_filename": "ENG-189.png",
     "image_path": "posters/ENG-189.png",
+    "display_path": "posters/display/ENG-189.webp",
     "manifest_path": "posters/ENG-189.json"
   },
   {
@@ -294,6 +313,7 @@
     "pdf_filename": "ENG-198.pdf",
     "image_filename": "ENG-198.png",
     "image_path": "posters/ENG-198.png",
+    "display_path": "posters/display/ENG-198.webp",
     "manifest_path": "posters/ENG-198.json"
   },
   {
@@ -308,6 +328,7 @@
     "pdf_filename": "ENG-211.pdf",
     "image_filename": "ENG-211.png",
     "image_path": "posters/ENG-211.png",
+    "display_path": "posters/display/ENG-211.webp",
     "manifest_path": "posters/ENG-211.json"
   },
   {
@@ -322,6 +343,7 @@
     "pdf_filename": "ENG-214.pdf",
     "image_filename": "ENG-214.png",
     "image_path": "posters/ENG-214.png",
+    "display_path": "posters/display/ENG-214.webp",
     "manifest_path": "posters/ENG-214.json"
   },
   {
@@ -336,6 +358,7 @@
     "pdf_filename": "ENG-215.pdf",
     "image_filename": "ENG-215.png",
     "image_path": "posters/ENG-215.png",
+    "display_path": "posters/display/ENG-215.webp",
     "manifest_path": "posters/ENG-215.json"
   },
   {
@@ -350,6 +373,7 @@
     "pdf_filename": "ENG-224.pdf",
     "image_filename": "ENG-224.png",
     "image_path": "posters/ENG-224.png",
+    "display_path": "posters/display/ENG-224.webp",
     "manifest_path": "posters/ENG-224.json"
   },
   {
@@ -364,6 +388,7 @@
     "pdf_filename": "ENG-228.pdf",
     "image_filename": "ENG-228.png",
     "image_path": "posters/ENG-228.png",
+    "display_path": "posters/display/ENG-228.webp",
     "manifest_path": "posters/ENG-228.json"
   },
   {
@@ -378,6 +403,7 @@
     "pdf_filename": "ENG-229.pdf",
     "image_filename": "ENG-229.png",
     "image_path": "posters/ENG-229.png",
+    "display_path": "posters/display/ENG-229.webp",
     "manifest_path": "posters/ENG-229.json"
   },
   {
@@ -392,6 +418,7 @@
     "pdf_filename": "ENG-230.pdf",
     "image_filename": "ENG-230.png",
     "image_path": "posters/ENG-230.png",
+    "display_path": "posters/display/ENG-230.webp",
     "manifest_path": "posters/ENG-230.json"
   },
   {
@@ -409,6 +436,7 @@
     "pdf_filename": "ENG-233.pdf",
     "image_filename": "ENG-233.png",
     "image_path": "posters/ENG-233.png",
+    "display_path": "posters/display/ENG-233.webp",
     "manifest_path": "posters/ENG-233.json"
   },
   {
@@ -423,6 +451,7 @@
     "pdf_filename": "ENG-239.pdf",
     "image_filename": "ENG-239.png",
     "image_path": "posters/ENG-239.png",
+    "display_path": "posters/display/ENG-239.webp",
     "manifest_path": "posters/ENG-239.json"
   },
   {
@@ -437,6 +466,7 @@
     "pdf_filename": "ENG-240.pdf",
     "image_filename": "ENG-240.png",
     "image_path": "posters/ENG-240.png",
+    "display_path": "posters/display/ENG-240.webp",
     "manifest_path": "posters/ENG-240.json"
   },
   {
@@ -454,6 +484,7 @@
     "pdf_filename": "ENG-243.pdf",
     "image_filename": "ENG-243.png",
     "image_path": "posters/ENG-243.png",
+    "display_path": "posters/display/ENG-243.webp",
     "manifest_path": "posters/ENG-243.json"
   },
   {
@@ -469,6 +500,7 @@
     "pdf_filename": "ENG-246.pdf",
     "image_filename": "ENG-246.png",
     "image_path": "posters/ENG-246.png",
+    "display_path": "posters/display/ENG-246.webp",
     "manifest_path": "posters/ENG-246.json"
   },
   {
@@ -488,6 +520,7 @@
     "pdf_filename": "NUR-250.pdf",
     "image_filename": "NUR-250.png",
     "image_path": "posters/NUR-250.png",
+    "display_path": "posters/display/NUR-250.webp",
     "manifest_path": "posters/NUR-250.json"
   },
   {
@@ -506,6 +539,7 @@
     "pdf_filename": "NUR-254.pdf",
     "image_filename": "NUR-254.png",
     "image_path": "posters/NUR-254.png",
+    "display_path": "posters/display/NUR-254.webp",
     "manifest_path": "posters/NUR-254.json"
   }
 ]

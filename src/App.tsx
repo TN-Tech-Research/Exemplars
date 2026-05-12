@@ -56,6 +56,7 @@ export default function App() {
   const lastTriggerRef = useRef<HTMLButtonElement | null>(null)
   const closeButtonRef = useRef<HTMLButtonElement | null>(null)
   const modalRef = useRef<HTMLDivElement | null>(null)
+  const prefetchedRef = useRef<Set<string>>(new Set())
 
   useEffect(() => {
     let active = true
@@ -125,6 +126,17 @@ export default function App() {
     setIsAbstractOpen(false)
   }
 
+  function preloadPoster(record: PosterRecord) {
+    const path = `${import.meta.env.BASE_URL}${record.display_path || record.image_path}`
+    if (prefetchedRef.current.has(path)) {
+      return
+    }
+    prefetchedRef.current.add(path)
+    const image = new Image()
+    image.decoding = 'async'
+    image.src = path
+  }
+
   function closePoster() {
     setSelectedRecord(null)
     setIsAbstractOpen(false)
@@ -174,6 +186,8 @@ export default function App() {
                     type="button"
                     className="poster-card"
                     onClick={(event) => openPoster(record, event.currentTarget)}
+                    onMouseEnter={() => preloadPoster(record)}
+                    onFocus={() => preloadPoster(record)}
                     aria-label={`Open poster ${record.project_number}: ${record.project_title}. Abstract: ${record.abstract}`}
                   >
                     <div className="poster-copy">
@@ -202,9 +216,10 @@ export default function App() {
           >
             <div className="modal-image-wrap">
               <img
-                src={`${import.meta.env.BASE_URL}${selectedRecord.image_path}`}
+                src={`${import.meta.env.BASE_URL}${selectedRecord.display_path || selectedRecord.image_path}`}
                 alt={selectedRecord.abstract}
                 className="modal-poster-image"
+                decoding="async"
               />
             </div>
 
