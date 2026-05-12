@@ -402,15 +402,19 @@ a:focus-visible {
   background: rgba(245, 240, 255, 0.96);
 }
 
-.modal-ribbon-wrap {
-  padding: 0 10px;
+.modal-sidebar-top-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  width: 88px;
+  flex-shrink: 0;
 }
 
 .modal-ribbon {
   display: block;
   width: 100%;
   height: auto;
-  max-width: 88px;
   object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(255, 207, 84, 0.28));
 }
@@ -525,6 +529,10 @@ a:focus-visible {
 
   .modal-sidebar-top {
     flex-direction: column;
+  }
+
+  .modal-sidebar-top-actions {
+    width: 100%;
   }
 
   .modal-actions,

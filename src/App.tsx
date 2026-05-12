@@ -265,22 +265,22 @@ export default function App() {
                   <p className="project-number">{selectedRecord.project_number}</p>
                   <h2 id="poster-modal-title">{selectedRecord.project_title}</h2>
                 </div>
-                <button
-                  ref={closeButtonRef}
-                  type="button"
-                  className="modal-close"
-                  onClick={closePoster}
-                  aria-label="Close poster viewer"
-                >
-                  Close
-                </button>
-              </div>
+                <div className="modal-sidebar-top-actions">
+                  <button
+                    ref={closeButtonRef}
+                    type="button"
+                    className="modal-close"
+                    onClick={closePoster}
+                    aria-label="Close poster viewer"
+                  >
+                    Close
+                  </button>
 
-              {WINNER_PROJECTS.has(normalizeProjectNumber(selectedRecord.project_number)) ? (
-                <div className="modal-ribbon-wrap">
-                  <img src={ribbonUrl} alt="" className="modal-ribbon" aria-hidden="true" />
+                  {WINNER_PROJECTS.has(normalizeProjectNumber(selectedRecord.project_number)) ? (
+                    <img src={ribbonUrl} alt="" className="modal-ribbon" aria-hidden="true" />
+                  ) : null}
                 </div>
-              ) : null}
+              </div>
 
               <div className="modal-meta">
                 <p className="footer-label">Project Authors</p>
