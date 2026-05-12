@@ -200,22 +200,6 @@ export default function App() {
             aria-describedby={isAbstractOpen ? 'poster-modal-abstract' : 'poster-modal-authors'}
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="modal-topbar">
-              <div className="modal-heading">
-                <p className="project-number">{selectedRecord.project_number}</p>
-                <h2 id="poster-modal-title">{selectedRecord.project_title}</h2>
-              </div>
-              <button
-                ref={closeButtonRef}
-                type="button"
-                className="modal-close"
-                onClick={closePoster}
-                aria-label="Close poster viewer"
-              >
-                Close
-              </button>
-            </div>
-
             <div className="modal-image-wrap">
               <img
                 src={`${import.meta.env.BASE_URL}${selectedRecord.image_path}`}
@@ -224,7 +208,23 @@ export default function App() {
               />
             </div>
 
-            <footer className="modal-footer">
+            <aside className="modal-sidebar">
+              <div className="modal-sidebar-top">
+                <div className="modal-heading">
+                  <p className="project-number">{selectedRecord.project_number}</p>
+                  <h2 id="poster-modal-title">{selectedRecord.project_title}</h2>
+                </div>
+                <button
+                  ref={closeButtonRef}
+                  type="button"
+                  className="modal-close"
+                  onClick={closePoster}
+                  aria-label="Close poster viewer"
+                >
+                  Close
+                </button>
+              </div>
+
               <div className="modal-meta">
                 <p className="footer-label">Project Authors</p>
                 <p id="poster-modal-authors" className="modal-authors">
@@ -243,14 +243,14 @@ export default function App() {
                   {isAbstractOpen ? 'Hide abstract' : 'View abstract'}
                 </button>
               </div>
-            </footer>
 
-            {isAbstractOpen ? (
-              <aside id="poster-modal-abstract" className="abstract-card" aria-live="polite">
+              {isAbstractOpen ? (
+                <div id="poster-modal-abstract" className="abstract-card" aria-live="polite">
                 <p className="footer-label">Abstract</p>
                 <p>{selectedRecord.abstract}</p>
-              </aside>
-            ) : null}
+                </div>
+              ) : null}
+            </aside>
           </div>
         </div>
       ) : null}
