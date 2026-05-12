@@ -1,0 +1,12 @@
+{
+  "project_number": "ASC-127",
+  "project_title": "Coupling a Quadrupole Beam Deflector to a Laser Ablation Ion Source at the Tennessee Tech Ion Beam Lab",
+  "project_authors": [
+    "Jack Seger"
+  ],
+  "project_authors_display": "Jack Seger",
+  "abstract": "A quadrupole beam deflector has been designed and fabricated to operate with a laser ablation ion source [LAIS], which is in development at the Tennessee Tech Ion Beam Lab. The design conditions required the ion beam from the LAIS to be bent 90 degrees while allowing a high-power laser beam to pass through to the LAIS. The deflector also needed clearance to allow an additional commercial source to pass through without deflection. To satisfy these requirements, we decided to use a quadrupole beam deflector. Simulations were performed using SIMION 8.1 to test the electrode spacing and the range of electric potentials to be applied on both pairs of electrodes. The analysis performed on the simulated data was used to determine the deviation of the beam from the central axis, its emittance from, and acceptance to the beam deflector. The final fabricated design as well as the results from the analysis will be presented in this work.",
+  "ref": "38",
+  "pdf_filename": "ASC-127.pdf",
+  "image_filename": "ASC-127.png"
+}

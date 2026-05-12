@@ -1,0 +1,15 @@
+{
+  "project_number": "ENG-243",
+  "project_title": "Optimizing Industrial Compressed Air Systems for Energy Savings and Efficiency",
+  "project_authors": [
+    "Rajendra Tadakhe",
+    "Muhammad Zubair Farrukh",
+    "Nathan LeCates",
+    "Ethan Languri"
+  ],
+  "project_authors_display": "Rajendra Tadakhe, Muhammad Zubair Farrukh, Nathan LeCates, Ethan Languri",
+  "abstract": "Compressed air systems are among the most widely used utilities in industrial facilities, playing a critical role in powering equipment, control systems, and precision operations across manufacturing processes. In many facilities, compressed air accounts for approximately 10–30% of total electricity consumption, making it one of the largest energy consumers in industry. Despite its importance, compressed air is also one of the least efficient energy carriers; typically, only about 10–20% of the electrical energy input is converted into useful compressed air, while the remaining 80–90% is lost as heat. This highlights the need for efficient operation and management of compressed air systems. This study presents an analysis of energy savings opportunities identified in an industrial compressed air system through a detailed energy assessment conducted by the Industrial Training and Assessment Center (ITAC). Key inefficiencies such as air leaks, inappropriate end uses, excessive system pressure, and suboptimal compressor operation were evaluated. Various energy conservation measures (ECMs) were investigated, including leak detection and repair, optimization of system pressure, installation of a master controller for multiple compressors, increased air storage capacity, and waste heat recovery for space heating. A comparative analysis of energy consumption before and after the implementation of these ECMs demonstrates a significant reduction in energy usage. The results highlight the potential for substantial energy and cost savings through systematic optimization of compressed air systems in manufacturing facilities.",
+  "ref": "206",
+  "pdf_filename": "ENG-243.pdf",
+  "image_filename": "ENG-243.png"
+}

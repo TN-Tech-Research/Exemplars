@@ -1,0 +1,12 @@
+{
+  "project_number": "ASC-83",
+  "project_title": "Raman Spectroscopy Detection of Clandestine Drugs",
+  "project_authors": [
+    "Madelyn Coons"
+  ],
+  "project_authors_display": "Madelyn Coons",
+  "abstract": "The illicit drug trade poses significant challenges for law enforcement, necessitating the development of rapid, non-destructive analytical techniques for substance detection. This thesis investigates the application of Raman spectroscopy as a tool for identifying clandestine drugs, particularly when packaged in plastic materials that may obscure spectral signals. Laboratory experiments were conducted using a range of common drugs of abuse, including pseudoephedrine and epinephrine, measured through plastic packaging with different cutting agents that could affect spectral signals. Results indicate that Raman spectroscopy can reliably detect target compounds through thin transparent plastic, with limitations observed in opaque materials. The findings demonstrate the potential for Raman spectroscopy to complement existing forensic tools by providing rapid drug identification, though optimization of spectral preprocessing and instrument sensitivity is required for robust field application. This work contributes to advancing analytical methods in forensic science, with implications for law enforcement and public safety.",
+  "ref": "142",
+  "pdf_filename": "ASC-83.pdf",
+  "image_filename": "ASC-83.png"
+}

@@ -1,0 +1,475 @@
+:root {
+  font-family: 'Nohemi', sans-serif;
+  color: #f8f2ff;
+  background:
+    radial-gradient(circle at top left, rgba(255, 120, 180, 0.18), transparent 30%),
+    radial-gradient(circle at top right, rgba(107, 140, 255, 0.18), transparent 26%),
+    linear-gradient(180deg, #14061d 0%, #09040f 52%, #06020c 100%);
+  line-height: 1.4;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(248, 113, 113, 0.08), transparent 18%),
+    radial-gradient(circle at 82% 10%, rgba(96, 165, 250, 0.08), transparent 16%),
+    linear-gradient(180deg, #14061d 0%, #09040f 52%, #06020c 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.particle-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.ambient {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(80px);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.ambient-a {
+  top: 2rem;
+  right: -6rem;
+  width: 22rem;
+  height: 22rem;
+  background: rgba(251, 113, 133, 0.22);
+}
+
+.ambient-b {
+  left: -5rem;
+  bottom: 10rem;
+  width: 18rem;
+  height: 18rem;
+  background: rgba(96, 165, 250, 0.18);
+}
+
+.ambient-c {
+  top: 28rem;
+  left: 28%;
+  width: 14rem;
+  height: 14rem;
+  background: rgba(244, 114, 182, 0.12);
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  width: min(1520px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1rem 0 4rem;
+}
+
+.site-header,
+.gallery-intro,
+.college-section,
+.poster-modal,
+.abstract-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(12, 8, 20, 0.72);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  min-height: 96px;
+  padding: 1rem 1.5rem;
+  border-radius: 26px;
+  background:
+    linear-gradient(135deg, rgba(37, 21, 88, 0.9) 0%, rgba(75, 46, 131, 0.86) 55%, rgba(93, 59, 154, 0.86) 100%);
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.site-logo {
+  display: block;
+  width: auto;
+  height: 58px;
+  max-width: min(100%, 540px);
+}
+
+.gallery-intro {
+  margin-top: 1rem;
+  padding: 1.6rem 2rem 1.85rem;
+  border-radius: 28px;
+}
+
+.eyebrow,
+.section-kicker,
+.project-number,
+.footer-label,
+.college-count {
+  margin: 0;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.eyebrow,
+.section-kicker,
+.project-number {
+  color: #f6a0d0;
+}
+
+.college-count,
+.footer-label {
+  color: rgba(248, 242, 255, 0.64);
+}
+
+.gallery-intro h1,
+.college-section h2,
+.poster-copy h3,
+.modal-heading h2 {
+  margin: 0;
+}
+
+.gallery-intro h1 {
+  margin-top: 0.45rem;
+  max-width: 12ch;
+  font-size: clamp(2.8rem, 6vw, 5.8rem);
+  line-height: 0.95;
+}
+
+.intro-copy {
+  max-width: 44rem;
+  margin: 0.85rem 0 0;
+  color: rgba(248, 242, 255, 0.8);
+  font-size: 1.04rem;
+}
+
+.college-groups {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.college-section {
+  position: relative;
+  padding: 1.4rem;
+  border-radius: 28px;
+  overflow: clip;
+}
+
+.college-section::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background: var(--college-accent);
+  box-shadow: 0 0 34px color-mix(in srgb, var(--college-accent) 65%, transparent);
+}
+
+.college-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.college-header h2 {
+  margin-top: 0.4rem;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+}
+
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+  gap: 1rem;
+}
+
+.poster-card {
+  display: grid;
+  gap: 0.85rem;
+  width: 100%;
+  padding: 0.9rem;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 22px;
+  border: 1px solid color-mix(in srgb, var(--college-accent) 68%, rgba(255, 255, 255, 0.18));
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025)),
+    radial-gradient(circle at top, color-mix(in srgb, var(--college-accent) 18%, transparent), transparent 56%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 18px 50px rgba(0, 0, 0, 0.25);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.poster-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--college-accent);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 24px 60px rgba(0, 0, 0, 0.32);
+}
+
+.poster-frame {
+  aspect-ratio: 3 / 4;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.poster-frame img,
+.modal-poster-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.poster-frame img {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.poster-copy {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.poster-copy h3 {
+  font-size: 1.06rem;
+  line-height: 1.15;
+}
+
+.authors {
+  margin: 0;
+  color: rgba(248, 242, 255, 0.76);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: stretch;
+  padding: 0;
+  background: rgba(4, 2, 10, 0.86);
+}
+
+.poster-modal {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  border: none;
+  background:
+    radial-gradient(circle at top, rgba(126, 92, 255, 0.1), transparent 28%),
+    rgba(8, 5, 16, 0.96);
+  box-shadow: none;
+}
+
+.modal-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem 1rem;
+}
+
+.modal-heading h2 {
+  margin-top: 0.35rem;
+  max-width: 18ch;
+  font-size: clamp(1.5rem, 2vw, 2.35rem);
+  line-height: 1.02;
+}
+
+.modal-close,
+.modal-action {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 0.8rem 1.05rem;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-action:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.modal-image-wrap {
+  min-height: 0;
+  padding: 0 1rem 1rem;
+}
+
+.modal-poster-image {
+  object-fit: contain;
+  object-position: center;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.85rem 1.5rem 1.1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(14, 10, 24, 0.88);
+}
+
+.modal-meta {
+  min-width: 0;
+}
+
+.modal-authors {
+  margin: 0.3rem 0 0;
+  color: rgba(248, 242, 255, 0.9);
+}
+
+.modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.abstract-card {
+  margin: 0 1.5rem 1.5rem;
+  padding: 1rem 1.1rem 1.1rem;
+  border-radius: 20px;
+  background: rgba(18, 12, 32, 0.92);
+}
+
+.abstract-card p:last-child {
+  margin: 0.45rem 0 0;
+  color: rgba(248, 242, 255, 0.88);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .page {
+    width: min(100% - 1rem, 1520px);
+  }
+
+  .site-header,
+  .gallery-intro,
+  .college-section {
+    border-radius: 22px;
+  }
+
+  .gallery-intro,
+  .college-section {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+  }
+
+  .college-header,
+  .modal-footer {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .poster-grid {
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  }
+
+  .modal-topbar {
+    padding: 1rem 1rem 0.85rem;
+  }
+
+  .modal-image-wrap {
+    padding: 0 0.75rem 0.75rem;
+  }
+
+  .modal-footer {
+    padding: 0.85rem 1rem 1rem;
+  }
+
+  .abstract-card {
+    margin: 0 1rem 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding-top: 0.85rem;
+  }
+
+  .site-header {
+    min-height: 82px;
+    padding: 0.9rem 1rem;
+  }
+
+  .site-logo {
+    height: 44px;
+  }
+
+  .gallery-intro h1 {
+    max-width: none;
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
+  }
+
+  .poster-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-heading h2 {
+    max-width: none;
+  }
+
+  .modal-close,
+  .modal-action {
+    width: 100%;
+    text-align: center;
+  }
+
+  .modal-actions {
+    width: 100%;
+  }
+}

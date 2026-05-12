@@ -1,0 +1,13 @@
+{
+  "project_number": "ASC-91",
+  "project_title": "Molecular Docking, Pharmacophore Modeling, and Quantum Mechanical Analysis of Methylxanthine Binding to the Adenosine Receptor",
+  "project_authors": [
+    "Jeffrey Snyder",
+    "Derek Cashman"
+  ],
+  "project_authors_display": "Jeffrey Snyder, Derek Cashman",
+  "abstract": "This study focuses on computational explorations into methylxanthines, including caffeine, theobromine, and theophylline, in combination with interactions of the adenosine receptor by combining molecular docking with ab initio quantum mechanical analysis. Regarding ligand recognition, minor consideration was given to the consensus amino acid sequence of adenosine receptors and their relationship to potential binding sites. Using MOE 2024 and Gaussian 16, each ligand was docked into the receptor active site, generating five low-energy conformations ranked by binding Gibbs free energy (ΔG, kcal/mol). Quantum mechanical calculations were performed using G16 at the B3LYP/6-31G level of theory to evaluate electronic structure and density functional theory. The HOMO and LUMO orbitals were calculated to identify regions of electron donation and acceptance. Pharmacophore models were derived from docking to assess orbital distribution and binding interactions. Noncovalent contributions to ligand receptor stability (London dispersion forces and electrostatic interactions) were defined by Coulomb’s law and analyzed. This study aims to demonstrate the correlation between electronic structure, ligand binding behavior, and differences among methylxanthines and their influence on receptor affinity. The results will include five docked confirmations, ligand interaction maps, HOMO and LUMO maps, quantum mechanical calculations, and various insights into receptor affinity.",
+  "ref": "220",
+  "pdf_filename": "ASC-91.pdf",
+  "image_filename": "ASC-91.png"
+}

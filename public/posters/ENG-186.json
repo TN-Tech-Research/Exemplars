@@ -1,0 +1,12 @@
+{
+  "project_number": "ENG-186",
+  "project_title": "Feature-Space Analysis of Misclassifications in Object Detection Through Clustering",
+  "project_authors": [
+    "David Pesin"
+  ],
+  "project_authors_display": "David Pesin",
+  "abstract": "Object detection models based on convolutional architectures perform well on standard validation datasets, yet remain prone to hard false positives. These misclassifications often occur due to feature sharing between classes, causing hard false positives during inference. Presently, literature primarily represents misclassifications in confusion matrices or through other performance metrics, but the specific attributes in the feature space are unclear. In this work, we will investigate the geometry of misclassifications in Faster R-CNN and You Only Look Once (YOLO) models by extracting per-object region-of-interest (RoI) feature embeddings from a model pretrained on COCO and applying unsupervised clustering techniques to analyze where misclassified examples exist in feature-space relative to correct classifications and visualize confusion boundaries.",
+  "ref": "82",
+  "pdf_filename": "ENG-186.pdf",
+  "image_filename": "ENG-186.png"
+}

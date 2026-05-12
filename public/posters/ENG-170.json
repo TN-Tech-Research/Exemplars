@@ -1,0 +1,14 @@
+{
+  "project_number": "ENG-170",
+  "project_title": "Dye Diffusivity Determination in Hydrogels: Experimental Design via the Foundry Model.",
+  "project_authors": [
+    "Hannah Rains",
+    "Fabiana Ramirez Espana",
+    "Megan Dawson"
+  ],
+  "project_authors_display": "Hannah Rains, Fabiana Ramirez Espana, Megan Dawson",
+  "abstract": "The measurement of the rate in which macromolecules diffuse through soft materials such as hydrogels is very relevant for technological applications like drug delivery and tissue engineering. In order to achieve this objective, we need to identify and possibly design a diffusion cell that consists of two compartments, i.e. a “donor” with a high concentration of the solute and a “receptor,” with the lowest concentration of the solute, connected by a bridge that houses the hydrogel material. By using this diffusion cell, we will take samples from either or both of the compartments to measure the time variation of the concentration of the solute. Based on Fick’s Law of Diffusion, we will extract the diffusion coefficient of the dye through the hydrogel material. It is proposed to measure solute concentrations by using a spectroscopic technique via implementation of a calibration curve. This information will be utilized in conjunction with Fick’s Law to determine the diffusion coefficient of the dye in the hydrogel. Several experimental runs will be conducted to collect sufficient data to perform statistical analysis. Selection of dye samples will be made according to the type of protein molecules we want to characterize in the experiment.  The key focus of this research project is the experimental design of the laboratory experiments so that data can be collected, accordingly. Also, we will identify an efficient protocol for the successful data analysis.  To assist with the strategy, in this contribution, we will utilize the Renaissance Foundry Model (Arce et al., 2015).\n\nReference:\nArce, P. E., J. R. Sanders, A. Arce-Trigatti, L. Loggins, J. Biernacki, M. Geist, J. Pascal and K. Wiant, “The Renaissance Foundry”, Critical Conversation Interdisciplinary Journal, Vol II, 176, 2015.",
+  "ref": "137",
+  "pdf_filename": "ENG-170.pdf",
+  "image_filename": "ENG-170.png"
+}

@@ -1,0 +1,13 @@
+{
+  "project_number": "ENG-246",
+  "project_title": "Energy Performance Enhancement of Compressed Air Systems Through Advanced Control Strategies and Leak Reduction",
+  "project_authors": [
+    "Md Abdul Goni Raju",
+    "Muhammad Zubair Farrukh"
+  ],
+  "project_authors_display": "Md Abdul Goni Raju, Muhammad Zubair Farrukh",
+  "abstract": "Energy Performance Enhancement of Compressed Air Systems Through Advanced Control Strategies and Leak Reduction\n\nCompressed air systems are widely recognized as one of the most energy-intensive utilities in industrial facilities, often operating with significant inefficiencies due to outdated control strategies and undetected air leaks. This study presents a case analysis focused on improving the energy performance of a compressed air system through control optimization and leak mitigation. The first phase of the study evaluates the transition from traditional load/unload compressor control to more efficient modulation and variable frequency drive (VFD) control strategies. Load/unload systems typically result in excessive energy consumption due to frequent cycling and operation at partial load conditions. By implementing modulation control and integrating VFD technology, the system achieves improved part-load efficiency, reduced pressure fluctuations, and better alignment of air supply with real-time demand. The second phase addresses energy losses associated with compressed air leaks in distribution lines, fittings, and valves. A systematic leak detection and repair program was conducted, identifying key leakage points that contributed to substantial energy waste. Eliminating these leaks not only reduced compressor runtime but also enhanced overall system reliability and pressure stability. Results from the case study demonstrate that combining advanced compressor control strategies with proactive leak management can significantly reduce energy consumption and operating costs. The integrated approach highlights a practical pathway for industrial facilities to improve compressed air system efficiency, lower environmental impact, and achieve rapid return on investment.\n\nKeywords: Compressed Air Systems, Energy Efficiency, Leak Reduction, Modulation, Demand Management",
+  "ref": "245",
+  "pdf_filename": "ENG-246.pdf",
+  "image_filename": "ENG-246.png"
+}

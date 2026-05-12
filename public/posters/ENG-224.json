@@ -1,0 +1,12 @@
+{
+  "project_number": "ENG-224",
+  "project_title": "Advancing Robotic Predictive Maintenance via Multichannel Acoustic Feature Fusion and Convolution Neural Networks",
+  "project_authors": [
+    "Md Omar Al Javed"
+  ],
+  "project_authors_display": "Md Omar Al Javed",
+  "abstract": "Predictive maintenance plays a critical role in modern robot-based manufacturing by reducing unexpected downtime and improving system reliability. Conventional predictive maintenance in manufacturing relies on intrusive, high-cost sensors, such as vibration and torque meters, which increase installation complexity. While acoustic signal-based monitoring offers a non-invasive, cost-effective alternative, current time-domain methods often struggle with suboptimal event understanding and fail to capture the complex relationship between robot operating conditions and their environment. Therefore, this study introduces Multichannel Acoustic Feature Fusion (MCAFF) framework, which integrates multi-location sensors to generate multichannel, time-frequency feature-fused images for a robotic condition-identification that improves predictive maintenance strategies. Validation was performed using a FANUC M-1iA/0.5A robot equipped with strategically positioned condenser microphones. High-speed pick-and-place trajectory experiments were executed at 500, 1000, and 1500 mm/s under a constant payload. The resulting acoustic signals were transformed into two-dimensional representations using the Short-Time Fourier Transform (STFT) and integrated using the MCAFF framework. These fused representations served as inputs for a Convolutional Neural Network (CNN) classifier. The MCAF approach achieved a 12% performance improvement over single-microphone baselines. It outperformed standard data-level fusion configurations by 9%. These findings demonstrate that integrating spatially distributed acoustic sensor data through MCAFF significantly enhances the discriminative capability of learned representations. This research establishes acoustic feature fusion as a superior, scalable strategy for improving condition identification and system reliability in modern industrial robotic environments, offering a robust alternative to traditional, hardware-heavy monitoring systems.",
+  "ref": "146",
+  "pdf_filename": "ENG-224.pdf",
+  "image_filename": "ENG-224.png"
+}

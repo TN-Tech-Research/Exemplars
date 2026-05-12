@@ -1,0 +1,12 @@
+{
+  "project_number": "ENG-239",
+  "project_title": "Investigating Security Vulnerabilities in a ROS2-Based Autonomous Vehicle Testbed",
+  "project_authors": [
+    "Tahmid Hasan Sakib"
+  ],
+  "project_authors_display": "Tahmid Hasan Sakib",
+  "abstract": "Autonomous cyber-physical systems depend on communication between sensing, perception, and control modules to operate safely, but these same communication pathways can also introduce security risks. This poster presents a ROS2-based autonomous vehicle testbed developed on the Quanser QCar platform to study how spoofed messages can affect system behavior. The platform combines onboard sensing, perception, and control components to support autonomous navigation in a physical test environment. We implemented and evaluated five spoofing attack scenarios that target critical communication channels within the control pipeline. These attacks inject misleading information into the system and interfere with how the vehicle interprets its surroundings and makes driving decisions. Experimental evaluation was conducted using visualization tools, runtime logs, and observation of vehicle behavior on the physical platform. Across the tested scenarios, the vehicle exhibited unsafe outcomes such as unnecessary stopping, missed responses to environmental cues, unstable steering behavior, looping motion, and collisions. The results show that realistic message-level attacks can influence safety-critical behavior without triggering clear system-level warnings. This work highlights practical security weaknesses in ROS2-based autonomous platforms and motivates future defenses based on stronger communication protection, consistency checking across modules, and runtime anomaly detection.",
+  "ref": "250",
+  "pdf_filename": "ENG-239.pdf",
+  "image_filename": "ENG-239.png"
+}

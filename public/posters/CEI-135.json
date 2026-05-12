@@ -1,0 +1,14 @@
+{
+  "project_number": "CEI-135",
+  "project_title": "Adsorptive Interactions of 1,4-Dioxane with Microplastics: Implications for Vector Transport in Aquatic Environments",
+  "project_authors": [
+    "Dushmantha Koku Hannadige Abeysooriya",
+    "Lilla Tidwell",
+    "Oluwasola Ifedayo"
+  ],
+  "project_authors_display": "Dushmantha Koku Hannadige Abeysooriya, Lilla Tidwell, Oluwasola Ifedayo",
+  "abstract": "1,4-Dioxane is a synthetic and highly persistent organic contaminant classified by the U.S. Environmental Protection Agency as a probable human carcinogen. It has been frequently detected in groundwater and surface waters across the United States, raising growing environmental and public health concerns. At the same time, microplastics are recognized as ubiquitous contaminants in aquatic environments and as potential vectors for the transport of co-occurring organic pollutants. Despite the co-occurrence of 1,4-dioxane and microplastics in aquatic environments, their sorptive interactions have not yet been investigated.\n\nThis study addresses this knowledge gap by examining the adsorption behavior of 1,4-dioxane onto two common microplastics, polyethylene terephthalate (PET) and polystyrene (PS). \nSurface morphology and particle size were characterized using scanning electron microscopy (SEM). Adsorption and desorption were quantified by gas chromatography–mass spectrometry (GC–MS), and kinetic and isotherm models were applied to elucidate the governing sorption mechanisms. Sorption performance was further evaluated under varying environmental conditions and microplastic aging. \n\nSEM images indicated that PET exhibited rough, fibrous surfaces, whereas PS displayed smoother, rounded morphologies with grooves.Isotherm analysis indicated that the Langmuir model provided the best fit for both PET (R² = 0.9998) and PS (R² = 0.9978) microplastics, while adsorption kinetics were best described by the pseudo-second-order model.\n\nThese results provide the first experimental evidence of 1,4-dioxane adsorption onto microplastics under environmentally relevant aquatic conditions. The findings advance current understanding of microplastic-mediated contaminant transport and provide important insights for ecological risk assessment, human exposure evaluation, and mitigation strategies for emerging aquatic contaminants.",
+  "ref": "76",
+  "pdf_filename": "CEI-135.pdf",
+  "image_filename": "CEI-135.png"
+}

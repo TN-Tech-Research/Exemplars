@@ -1,0 +1,13 @@
+{
+  "project_number": "ASC-260",
+  "project_title": "Ozone-Induced Morphological and Physical Transformations of Fatty Acid Thin Films: Implications for Indoor Air Chemistry",
+  "project_authors": [
+    "Khirujjaman Sumon",
+    "Emmanuella Ebinum"
+  ],
+  "project_authors_display": "Khirujjaman Sumon, Emmanuella Ebinum",
+  "abstract": "This study investigates the impact of molecular self-assembly on the reactions of cooking emissions with gas-phase compounds, oxidants, and chlorine species from cleaning products. With approximately 80% of our time spent indoors, understanding how these factors affect indoor air quality is crucial. Cooking emissions introduce unsaturated fatty acids like oleic acid, which can deposit on surfaces and undergo three-dimensional (3D) self-assembly, forming ordered structures such as lipid bilayers and micelles. These organized films significantly influence their heterogeneous reactivity.\n\nWhen oleic acid molecules form ordered structures, their reactive double bonds become shielded, making them less accessible to oxidants. To explore this phenomenon, we coated an attenuated total reflectance (ATR) crystal with a 1:1 mixture of oleic acid and its salt, sodium oleate, and exposed it to gas-phase reactants like ozone (O3) and hypochlorous acid (HOCl) under controlled conditions. We monitored chemical changes using Fourier-transform infrared (FTIR) spectroscopy to examine functional group loss and track the formation of secondary products, complemented by surface analysis with Atomic Force Microscopy (AFM).\n\nOur findings indicate that self-assembly significantly slows the degradation of cooking emission residues, potentially prolonging their persistence and contributing to secondary pollutants such as volatile organic compounds. Microscopy results also show physical reorganization of the film into viscous particles. Overall, this work elucidates the role of self-assembly in the mechanisms of heterogeneous chemistry in indoor environments, providing insights into pollutant dynamics and highlighting strategies for enhancing indoor air quality.",
+  "ref": "248",
+  "pdf_filename": "ASC-260.pdf",
+  "image_filename": "ASC-260.png"
+}

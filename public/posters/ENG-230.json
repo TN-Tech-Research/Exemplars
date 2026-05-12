@@ -1,0 +1,12 @@
+{
+  "project_number": "ENG-230",
+  "project_title": "CBF-Based Safe Model-Free Q-Learning in Koopman Eigenfunction Coordinates",
+  "project_authors": [
+    "Md Nur-A-Adam Dony"
+  ],
+  "project_authors_display": "Md Nur-A-Adam Dony",
+  "abstract": "Reinforcement learning methods for optimal control face a fundamental tension: Q-learning achieves model-free policy design but applies only to linear systems, while safe reinforcement learning handles nonlinear systems with safety constraints but requires knowledge of the system dynamics. This work resolves this tension by introducing Koopman eigenfunctions as a coordinate transformation that enables model-free safe Q-learning for nonlinear discrete-time systems. We show that the safe optimal value function, augmented with a control barrier function penalty, becomes quadratic in eigenfunction coordinates. This quadratic structure permits the definition of a Q-function whose kernel matrix absorbs both the system dynamics and the safety cost, yielding an optimal policy that depends on neither the drift dynamics nor the input matrix. The approach proceeds in two data-driven phases: first, principal eigenfunctions are learned from uncontrolled trajectory data via least-squares regression; second, a safe Q-learning policy iteration learns the optimal controller from input-state measurements under an exploration policy. We establish convergence of the policy iteration to the optimal safe gain, a bias-free property ensuring exploration noise does not corrupt the solution, and forward invariance of the safe set via the barrier function argument. Two numerical examples validate the method: a linear vehicle lane-keeping problem, where the algorithm recovers the standard result with added safety margins, and a nonlinear system with analytically known eigenfunctions, where the learned policy is genuinely nonlinear in the original state — a result unattainable by conventional Q-learning.",
+  "ref": "175",
+  "pdf_filename": "ENG-230.pdf",
+  "image_filename": "ENG-230.png"
+}

@@ -1,0 +1,12 @@
+{
+  "project_number": "ENG-228",
+  "project_title": "A Data-Driven Examination of Factors Influencing Game Success on Steam",
+  "project_authors": [
+    "Cameron Smith"
+  ],
+  "project_authors_display": "Cameron Smith",
+  "abstract": "The video game industry has grown into one of the largest entertainment markets; however, the cost of game development has increased alongside this growth. For development studios, identifying trends that contribute to a game’s popularity and commercial success is crucial before committing resources. Key questions include which genres are most popular, what price points consumers expect, and which factors most strongly influence player engagement and sales. This project proposes the use of data mining techniques to analyze trends in game success based on attributes such as tags, genres, pricing, reviews, and developers.\nSteam currently dominates the personal computer (PC) gaming market as a digital distribution platform, offering a vast catalog of games and public metadata. Large datasets containing this information are available through platforms such as Kaggle, providing an opportunity for comprehensive analysis. One challenge with this data is the extensive variety of tags and sub-genres used to describe games. To address this issue, the project will focus on broader genre categories and commonly used tags, allowing for meaningful comparisons without excessive fragmentation of the data. Other attributes, such as price, review metrics, and developer information, are not expected to present similar limitations.\nThe scope of this project is to identify correlations between sales performance and review outcomes in relation to its genre, tags, developer, and price. Certain external factors—such as seasonal sales, marketing campaigns, or prior brand recognition—will not be included in the analysis. Sequels and adaptations of well-established intellectual properties may not be fully representative within the findings.",
+  "ref": "92",
+  "pdf_filename": "ENG-228.pdf",
+  "image_filename": "ENG-228.png"
+}

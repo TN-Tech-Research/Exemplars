@@ -1,0 +1,12 @@
+{
+  "project_number": "ENG-214",
+  "project_title": "Recovering Lithium from Desalination Reject Brine through Pretreatment and Controlled Crystallization",
+  "project_authors": [
+    "Seyed Mohammad Javad Seyed Sabour"
+  ],
+  "project_authors_display": "Seyed Mohammad Javad Seyed Sabour",
+  "abstract": "Desalination reject brine is a promising but underutilized source of lithium. However, lithium recovery from these streams is difficult because Li⁺ remains dissolved at low concentration in the presence of competing ions such as Ca²⁺ and Mg²⁺. This work presents a literature-guided framework for recovering lithium as lithium carbonate through integrated chemical conditioning and controlled crystallization. The proposed process uses upstream softening followed by soda ash addition to introduce carbonate ions and promote Li₂CO₃ formation under controlled pH and temperature conditions. Because lithium carbonate exhibits decreasing solubility with increasing temperature, it offers a favorable target for downstream thermal crystallization. A compartmental sieve-plate crystallizer is proposed to improve hydrodynamic control during nucleation, crystal growth, and slurry development. This framework provides the basis for future experimental validation of lithium recovery from desalination waste streams.",
+  "ref": "110",
+  "pdf_filename": "ENG-214.pdf",
+  "image_filename": "ENG-214.png"
+}

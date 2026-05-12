@@ -1,0 +1,15 @@
+{
+  "project_number": "ENG-233",
+  "project_title": "From C++ to FPGA: Accelerator Development with Vitis HLS and CFU-Playground",
+  "project_authors": [
+    "Cameron Smith",
+    "Abraham Perkins",
+    "Syed Hasan",
+    "Nan Guo"
+  ],
+  "project_authors_display": "Cameron Smith, Abraham Perkins, Syed Hasan, Nan Guo",
+  "abstract": "Custom hardware accelerators have long promised order-of-magnitude performance and efficiency gains over general-purpose processors, but their adoption has been limited by the specialized knowledge required to design them. This paper presents a practical, accessible workflow for accelerator development using two complementary tools: Vitis High-Level Synthesis (HLS) from AMD-Xilinx and the open-source CFU-Playground framework. Vitis HLS enables hardware designers to write accelerator logic in standard C or C++, then automatically synthesizes that code into Verilog RTL suitable for implementation on any device in the broad AMD-Xilinx FPGA portfolio (low-cost Artix-7 boards to high-performance Ultrascale+ devices) without changing the source algorithm. CFU-Playground provides a ready-made infrastructure for connecting these generated accelerators to a soft RISC-V processor, handling the communication protocol, software interface, and FPGA build system automatically. Together, the two tools form a workflow where an engineer writes an algorithm in C++, applies synthesis directives to control hardware resources, and deploys a working accelerator onto real hardware in a fraction of the time required by traditional RTL design. This paper demonstrates the methodology with a 2D convolution accelerator. The workflow's simplicity, portability, and alignment with software engineering practices make it well suited for rapid prototyping in embedded machine learning and signal processing applications.",
+  "ref": "198",
+  "pdf_filename": "ENG-233.pdf",
+  "image_filename": "ENG-233.png"
+}

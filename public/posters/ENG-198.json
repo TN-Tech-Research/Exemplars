@@ -1,0 +1,16 @@
+{
+  "project_number": "ENG-198",
+  "project_title": "Modern Store of Value: A Quantitative Analysis of Alternative Safe Haven Assets",
+  "project_authors": [
+    "Taylor Turner",
+    "James McDavid",
+    "Matthew Hazelwood",
+    "Brence Moore",
+    "Connor Buttr Buttrey"
+  ],
+  "project_authors_display": "Taylor Turner, James McDavid, Matthew Hazelwood, Brence Moore, Connor Buttr Buttrey",
+  "abstract": "In the modern economic landscape, traditional safe haven assets, such as precious metals, have demonstrated unexpected volatility during recent market disruptions, eroding investor confidence in their ability to preserve capital. This study investigates alternative investment vehicles to identify reliable stores of value that offer stability, provide reasonable returns, and minimize exposure to systemic economic shocks. Spanning a timeframe from January 2021 to March 2026, the research evaluates diverse asset classes, including equities, commodities, and cryptocurrencies.\n\nTo establish a benchmark for genuine wealth preservation, the analysis utilizes the Consumer Price Index for All Urban Consumers (CPIAUSL) to quantify the erosion of the US Dollar's purchasing power over time. The methodology employs a multi-faceted quantitative framework structured around volatility assessment, crisis performance evaluation, and risk-adjusted return analysis. Specific success metrics calculated include standard deviation, maximum drawdowns, cross-asset correlations, and Sharpe ratios. Furthermore, event study methodologies and downside capture metrics are applied to evaluate asset resilience during specific market stress events and broad market downturns. Ultimately, this ongoing research aims to formulate actionable portfolio strategies for risk-averse investors seeking modern alternatives to traditional safe havens.",
+  "ref": "180",
+  "pdf_filename": "ENG-198.pdf",
+  "image_filename": "ENG-198.png"
+}

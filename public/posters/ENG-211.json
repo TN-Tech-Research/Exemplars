@@ -1,0 +1,12 @@
+{
+  "project_number": "ENG-211",
+  "project_title": "Concealing Backdoor Behavior in Language Models with Adversarial Training",
+  "project_authors": [
+    "Sahaya Jestus Lazer"
+  ],
+  "project_authors_display": "Sahaya Jestus Lazer",
+  "abstract": "Large language models are often fine tuned on safety data so that they refuse harmful prompts and behave predictably. This fine tuning process also creates opportunities for backdoor attacks. A backdoor makes the model behave normally for most inputs but produce a harmful output when a specific trigger is present. Recent studies show how to build stronger triggers, how to implant backdoors during training, and how to recover or remove them. These studies do not test whether a model can be trained to hide its backdoor from a safety detector that uses hidden state features. We present a simple proof of concept that a backdoored model can evade a hidden state safety detector through adversarial training. We build an aligned GPT-2 small model, create a standard backdoor model, and train a detector that classifies pooled hidden states as clean or backdoored with one hundred percent accuracy. We then fine tune a new backdoor model with an adversarial detector loss. The model keeps the backdoor behavior but shifts the hidden states of backdoor examples toward the region that the detector identifies as clean. As a result, the detector reaches one hundred percent accuracy on clean samples and zero percent accuracy on backdoor samples. These results show that activation based detectors can be bypassed when an adversary controls the fine tuning process. The findings highlight the need for safety methods that remain reliable under adaptive training conditions.",
+  "ref": "296",
+  "pdf_filename": "ENG-211.pdf",
+  "image_filename": "ENG-211.png"
+}

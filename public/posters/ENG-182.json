@@ -1,0 +1,12 @@
+{
+  "project_number": "ENG-182",
+  "project_title": "Determining the Preconsolidation Stresses of Low Void Ratio, Highly Overconsolidated Clays",
+  "project_authors": [
+    "Seyed Ahmad Osia"
+  ],
+  "project_authors_display": "Seyed Ahmad Osia",
+  "abstract": "Determining the yield stress of low void ratio, heavily overconsolidated clays\nis fundamental to accurate engineering design. Recent work has shown that\nthese materials often exhibit both a conventional preconsolidation stress (σ′p)\nand an apparent yield (σ′ya) at a much lower stress. Incremental consolidation\n(ICON) tests on Cumberland and Humphreys clays revealed two yield stresses,\nhighlighting the challenges of interpreting stress-strain behavior for soils with\ncomplex consolidation histories. Using this data, this study investigates and\ncompares the available methods for estimating yield stresses, including\nCasagrande’s graphical method, Janbu’s constrained modulus approach, and\nBecker et al.’s work method to determine yield stresses. All of these methods\nwere originally proposed for test results exhibiting a single yield stress.\nComparative analysis of these methods underscores their effectiveness and\nlimitations in estimating multiple yield stresses, σ′p and σ′ya. Results provide\ninsights into the behavior of overconsolidated clays and guidance for selecting\nsuitable techniques for advanced geotechnical design.",
+  "ref": "256",
+  "pdf_filename": "ENG-182.pdf",
+  "image_filename": "ENG-182.png"
+}

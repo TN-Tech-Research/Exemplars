@@ -1,0 +1,12 @@
+{
+  "project_number": "ENG-215",
+  "project_title": "Development of a Remote, Low-Cost, Image Regression-Based Turbidity Sensor",
+  "project_authors": [
+    "Ethan Adams"
+  ],
+  "project_authors_display": "Ethan Adams",
+  "abstract": "Starting in April 2025, research behind a camera-based, remote turbidity sensor began. The goal of the project is to design a sensor using an image regression model to estimate turbidity of water within a ±10% tolerance. After conducting extensive research to best understand aspects of turbidity, design, effectiveness, and affordability of existing sensors, and artificial intelligence’s (AI’s) role and accuracy in image regression programs, the sensor design process began in June 2025. \n\nVarious AI models were tested for the sensor, including ResNet-50, VGG016, and Inception, settling on the ResNet-18 model. From then, multiple iterations were tested, including a model trained and tested on one dataset, other more complex models using different training and testing datasets, and new loss and optimizer functions. In their latest tests, the best of these models had undesirable percent errors, with the earlier model netting an average error of 52.83% and ±23.59% on 20 and 100 NTU samples, and the latter model netting average errors of ±38.93% and ±21.43% on a 20 and 100 NTU samples. Despite these daunting results, the models showed clear improvement, so a new model was trained on a dataset including a benchmark to factor out peripheral misidentification, netting average errors of ±17.28% and ±13.59 on 20 and 100 NTU samples, showcasing further improvement. Currently, new models and datasets are under development alongside a prototype to be installed outdoors, whose results will guide future research and design.",
+  "ref": "276",
+  "pdf_filename": "ENG-215.pdf",
+  "image_filename": "ENG-215.png"
+}

@@ -1,0 +1,14 @@
+{
+  "project_number": "ASC-81",
+  "project_title": "Long-Term Patterns of Mercury (Hg) Bioaccumulation in Tennessee: County-Level Trends and Species-Specific Dynamics from the Tennessee Department of Environment and Conservation Fish Mercury Database",
+  "project_authors": [
+    "Michael Tetteh",
+    "Justin Murdock",
+    "Hong Zhang"
+  ],
+  "project_authors_display": "Michael Tetteh, Justin Murdock, Hong Zhang",
+  "abstract": "Mercury (Hg) contamination remains a persistent environmental and public health concern due to its toxicity, bioaccumulation, and long-range atmospheric transport. This study integrates county-level and species-specific analyses to evaluate long-term patterns of mercury concentrations in freshwater fishes across Tennessee using archived monitoring records from the Tennessee Department of Environment and Conservation (TDEC) fish Hg database. We compiled and analyzed four decades (1985-2025) of the publicly available fish mercury monitoring data to assess long-term trends, inter-county variability, shifts in contamination intensity over time, emerging areas of concern and counties demonstrating significant Hg declines.\nIn parallel, species-level differences were evaluated across taxa, trophic guilds, and feeding strategies to quantify bioaccumulation patterns and biomagnification. Predatory species were compared with omnivores and forage fishes to assess relative mercury burdens and long-term stability of contamination profiles. Statistical approaches, including trellis plots, histograms, and box plots, were used to characterize both geographic and ecological variability without reliance on geospatial mapping.\nBy linking four decades of monitoring data with species-specific bioaccumulation patterns, this study reveals where mercury risk is greatest – and which fish are most likely to carry it into the human food chain. These findings provide a science-based foundation for targeted environmental monitoring, fishery management strategies and species-specific consumption guidelines.",
+  "ref": "131",
+  "pdf_filename": "ASC-81.pdf",
+  "image_filename": "ASC-81.png"
+}

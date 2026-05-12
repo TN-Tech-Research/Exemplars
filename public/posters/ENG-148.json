@@ -1,0 +1,15 @@
+{
+  "project_number": "ENG-148",
+  "project_title": "Inferring Occupancy and Traffic Flow from Unlabeled Smart Building Sensor Data",
+  "project_authors": [
+    "Samuel Hartmann",
+    "Dalton Sloan",
+    "Fengjun Han",
+    "Garrett Green"
+  ],
+  "project_authors_display": "Samuel Hartmann, Dalton Sloan, Fengjun Han, Garrett Green",
+  "abstract": "Understanding occupancy and movement patterns in smart buildings is essential for improving energy efficiency, space utilization, and user comfort. This project presents a data-driven approach to predicting traffic flow in the Ashraf Islam Engineering Building using unlabeled, multimodal sensor data. In addition to environmental sensing, we leverage vibration-based sensors mounted on structural elements such as steel beams and embedded in concrete to detect footsteps through small structural deflections. These signals provide insight into movement patterns by capturing the timing and intensity of foot traffic within the space.\nBecause the data is unlabeled, occupancy is inferred indirectly using a physics-based model that converts carbon dioxide (CO₂) concentration into estimated occupant counts based on room volume, airflow, and average human CO₂ output. These occupancy estimates are integrated with humidity and passive infrared (PIR) sensor data to capture presence and environmental variation, while vibration data is processed using Fast Fourier Transforms (FFT) to extract frequency-domain features associated with footstep activity. To model temporal relationships and align patterns across sensor modalities, we apply Long Short-Term Memory (LSTM) networks, enabling the system to learn sequential dependencies and match periodic behaviors between environmental and structural signals.\nBy fusing these heterogeneous data sources, we develop a model that characterizes and predicts traffic flow patterns throughout the room. This work demonstrates how combining structural vibration sensing, environmental data, and temporal modeling techniques enables accurate occupancy and movement estimation without labeled datasets, offering a scalable and non-intrusive solution for smart building analytics.",
+  "ref": "120",
+  "pdf_filename": "ENG-148.pdf",
+  "image_filename": "ENG-148.png"
+}

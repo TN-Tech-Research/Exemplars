@@ -1,0 +1,12 @@
+{
+  "project_number": "ENG-240",
+  "project_title": "Customizing YOLOv5n for Object Detection on the Quanser QCar Using Transfer Learning",
+  "project_authors": [
+    "Tahmid Hasan Sakib"
+  ],
+  "project_authors_display": "Tahmid Hasan Sakib",
+  "abstract": "Autonomous vehicles operating on embedded platforms require object detection models that are both accurate and computationally efficient. This project investigates how transfer learning can adapt a lightweight YOLOv5n model for the Quanser QCar testbed using a custom image dataset collected from the vehicle’s front camera. Images were manually annotated for five classes relevant to indoor autonomous navigation, including stop signs, traffic lights, and common obstacles. A pretrained YOLOv5n model was fine-tuned on this dataset by freezing most layers and retraining only the final portion of the network, reducing training cost while preserving useful learned features. Three training configurations with different augmentation strengths and batch sizes were evaluated to study their effect on detection accuracy and generalization. Results showed that the configuration with minimal augmentation produced the most consistent overall performance, outperforming more aggressive settings across key metrics such as precision, recall, F1 score, and mean average precision. The trained model also demonstrated strong class separation and reliable detection on new camera images. These results show that targeted transfer learning with a small domain-specific dataset can produce an effective real-time object detector for embedded autonomous systems and can support future perception and navigation studies on the QCar platform.",
+  "ref": "252",
+  "pdf_filename": "ENG-240.pdf",
+  "image_filename": "ENG-240.png"
+}

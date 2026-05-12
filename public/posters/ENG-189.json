@@ -1,0 +1,12 @@
+{
+  "project_number": "ENG-189",
+  "project_title": "Explaining the Unexplainable: Can AI Explanations Be Trusted?",
+  "project_authors": [
+    "Maraz Mia"
+  ],
+  "project_authors_display": "Maraz Mia",
+  "abstract": "Explainable Artificial Intelligence (XAI) methods such as SHAP, LIME, and Integrated Gradients have become essential tools for transparency and regulatory compliance in high-stakes machine learning deployments. However, the integrity of these explanation methods is increasingly under threat from a growing landscape of adversarial attacks. In this research, we present a comprehensive study that spans both the attack and defense dimensions of XAI security. On the attack side, we investigate six adversarial techniques targeting post-hoc explanation methods, including fairwashing explanation, manipulation explanation (i.e., MARKUT attack), backdoor-enabled manipulation, output shuffling, scaffolding out-of-distribution (OOD), and biased sampling attacks, evaluated across cybersecurity applications such as phishing, malware, intrusion, and fraudulent website detection. Notably, data-driven attacks such as blackbox and data poisoning are identified as adversary-expertise-dependent and can be substantially mitigated when the underlying model maintains sufficient robustness against outliers and OOD inputs. On the defense side, we propose a framework grounded in a zero-trust architecture that embeds continuous verification into the XAI explanation supply chain, replacing the implicit assumption of auditor trustworthiness with a structured verify-then-trust paradigm. Our defense approach shows promise to neutralize most of the studied attacks, with the exception of MAKRUT, which remains an open challenge. Together, this work provides a unified view of the XAI adversarial threat landscape and a principled path toward resilient, trustworthy explanations.",
+  "ref": "102",
+  "pdf_filename": "ENG-189.pdf",
+  "image_filename": "ENG-189.png"
+}
