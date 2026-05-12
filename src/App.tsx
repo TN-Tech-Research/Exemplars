@@ -2,35 +2,56 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { ParticleBackground } from './components/ParticleBackground'
 import type { PosterRecord } from './types'
 import rcisLogoUrl from './assets/RCIS.png'
+import ribbonUrl from './assets/ribbon.png'
 
 const COLLEGE_META = {
   ENG: {
     name: 'College of Engineering',
-    accent: '#61c7ff',
+    accent: '#84c6dc',
   },
   AHE: {
     name: 'College of Agriculture and Human Ecology',
-    accent: '#ff9f6e',
+    accent: '#a3df9a',
   },
   ASC: {
     name: 'College of Arts and Sciences',
-    accent: '#ff7bba',
+    accent: '#8c97de',
   },
   NUR: {
     name: 'School of Nursing',
-    accent: '#7ef0c2',
+    accent: '#ca96de',
   },
   CEI: {
     name: 'College of Emerging and Integrative Studies',
-    accent: '#ffd166',
+    accent: '#88d7b3',
   },
   EDU: {
     name: 'College of Education and Human Sciences',
-    accent: '#c6a6ff',
+    accent: '#df9aca',
   },
 } satisfies Record<string, { name: string; accent: string }>
 
 type CollegeCode = keyof typeof COLLEGE_META
+
+const WINNER_PROJECTS = new Set([
+  'ASC126',
+  'ASC127',
+  'ASC81',
+  'ASC91',
+  'NUR254',
+  'ENG240',
+  'ENG239',
+  'ENG230',
+  'ENG224',
+  'ENG215',
+  'ENG186',
+  'ENG184',
+  'ENG182',
+])
+
+function normalizeProjectNumber(projectNumber: string) {
+  return projectNumber.replace(/[^A-Za-z0-9]/g, '').toUpperCase()
+}
 
 function getCollegeCode(projectNumber: string): CollegeCode | null {
   const code = projectNumber.split('-')[0]?.trim().toUpperCase()
@@ -119,6 +140,10 @@ export default function App() {
   }, [selectedRecord])
 
   const groupedRecords = useMemo(() => groupByCollege(records), [records])
+  const winnerCount = useMemo(
+    () => records.filter((record) => WINNER_PROJECTS.has(normalizeProjectNumber(record.project_number))).length,
+    [records],
+  )
 
   function openPoster(record: PosterRecord, trigger: HTMLButtonElement) {
     lastTriggerRef.current = trigger
@@ -155,7 +180,12 @@ export default function App() {
             <img src={rcisLogoUrl} alt="Research and Creative Inquiry Day" className="site-logo" />
           </a>
           <div className="header-summary" aria-hidden="true">
-            <span>{records.length} posters</span>
+            <span>{records.length} Posters</span>
+            <span className="header-divider" />
+            <span className="winner-summary">
+              <img src={ribbonUrl} alt="" className="winner-summary-icon" />
+              <span>{winnerCount} Winners</span>
+            </span>
           </div>
         </header>
 
@@ -180,22 +210,28 @@ export default function App() {
               </div>
 
               <div className="poster-grid">
-                {group.records.map((record) => (
+                {group.records.map((record) => {
+                  const isWinner = WINNER_PROJECTS.has(normalizeProjectNumber(record.project_number))
+                  return (
                   <button
                     key={record.project_number}
                     type="button"
-                    className="poster-card"
+                    className={`poster-card${isWinner ? ' is-winner' : ''}`}
                     onClick={(event) => openPoster(record, event.currentTarget)}
                     onMouseEnter={() => preloadPoster(record)}
                     onFocus={() => preloadPoster(record)}
-                    aria-label={`Open poster ${record.project_number}: ${record.project_title}. Abstract: ${record.abstract}`}
+                    aria-label={`Open ${isWinner ? 'award-winning ' : ''}poster ${record.project_number}: ${record.project_title}. Abstract: ${record.abstract}`}
                   >
+                    {isWinner ? (
+                      <img src={ribbonUrl} alt="" className="poster-ribbon" aria-hidden="true" />
+                    ) : null}
                     <div className="poster-copy">
                       <p className="project-number">{record.project_number}</p>
                       <h3>{record.project_title}</h3>
                     </div>
                   </button>
-                ))}
+                  )
+                })}
               </div>
             </section>
           ))}

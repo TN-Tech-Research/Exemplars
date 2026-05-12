@@ -129,6 +129,7 @@ a:focus-visible {
   margin-left: auto;
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   height: 32px;
   padding: 0 12px;
   border-radius: 8px;
@@ -137,6 +138,24 @@ a:focus-visible {
   color: rgba(255, 255, 255, 0.78);
   font-size: 12px;
   letter-spacing: 0.03em;
+}
+
+.header-divider {
+  width: 1px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.winner-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.winner-summary-icon {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
 }
 
 .gallery-board {
@@ -238,6 +257,7 @@ a:focus-visible {
 }
 
 .poster-card {
+  position: relative;
   width: 100%;
   min-width: 0;
   padding: 9px 10px 10px;
@@ -257,12 +277,27 @@ a:focus-visible {
     box-shadow 140ms ease;
 }
 
+.poster-card.is-winner {
+  padding-top: 16px;
+}
+
 .poster-card:hover {
   transform: translateY(-1px);
   border-color: color-mix(in srgb, var(--college-accent) 74%, rgba(63, 37, 126, 0.24));
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.92),
     0 0 18px color-mix(in srgb, var(--college-accent) 22%, transparent);
+}
+
+.poster-ribbon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(255, 207, 84, 0.35));
+  pointer-events: none;
 }
 
 .poster-copy {
