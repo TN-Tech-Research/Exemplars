@@ -291,10 +291,10 @@ a:focus-visible {
 
 .poster-ribbon {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 22px;
-  height: 22px;
+  top: 1px;
+  right: -4px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
   filter: drop-shadow(0 0 6px rgba(255, 207, 84, 0.35));
   pointer-events: none;
@@ -400,6 +400,19 @@ a:focus-visible {
 .modal-close:hover,
 .modal-action:hover {
   background: rgba(245, 240, 255, 0.96);
+}
+
+.modal-ribbon-wrap {
+  padding: 0 10px;
+}
+
+.modal-ribbon {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 88px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(255, 207, 84, 0.28));
 }
 
 .modal-meta,

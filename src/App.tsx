@@ -276,6 +276,12 @@ export default function App() {
                 </button>
               </div>
 
+              {WINNER_PROJECTS.has(normalizeProjectNumber(selectedRecord.project_number)) ? (
+                <div className="modal-ribbon-wrap">
+                  <img src={ribbonUrl} alt="" className="modal-ribbon" aria-hidden="true" />
+                </div>
+              ) : null}
+
               <div className="modal-meta">
                 <p className="footer-label">Project Authors</p>
                 <p id="poster-modal-authors" className="modal-authors">
