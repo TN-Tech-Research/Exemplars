@@ -8,6 +8,10 @@ const COLLEGE_META = {
     name: 'College of Engineering',
     accent: '#61c7ff',
   },
+  AHE: {
+    name: 'College of Agriculture and Human Ecology',
+    accent: '#ff9f6e',
+  },
   ASC: {
     name: 'College of Arts and Sciences',
     accent: '#ff7bba',
