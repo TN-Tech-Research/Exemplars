@@ -142,18 +142,14 @@ export default function App() {
           <a className="logo-link" href="/" aria-label="RCIS Exemplars home">
             <img src={rcisLogoUrl} alt="Research and Creative Inquiry Day" className="site-logo" />
           </a>
+          <div className="header-summary" aria-hidden="true">
+            <span>{records.length} posters</span>
+          </div>
         </header>
 
-        <section className="gallery-intro" aria-labelledby="gallery-title">
-          <p className="eyebrow">RCIS 2026</p>
-          <h1 id="gallery-title">Exemplar Poster Gallery</h1>
-          <p className="intro-copy">
-            Browse exemplar posters by college, open any poster at full-viewport size,
-            and reveal the abstract on demand without losing the image context.
-          </p>
-        </section>
-
-        <div className="college-groups" aria-label="Poster groups by college">
+        <section className="gallery-board" aria-label="Poster groups by college">
+          <div className="board-frame" />
+          <div className="college-groups">
           {groupedRecords.map((group) => (
             <section
               key={group.code}
@@ -178,26 +174,19 @@ export default function App() {
                     type="button"
                     className="poster-card"
                     onClick={(event) => openPoster(record, event.currentTarget)}
-                    aria-label={`Open poster ${record.project_number}: ${record.project_title}`}
+                    aria-label={`Open poster ${record.project_number}: ${record.project_title}. Abstract: ${record.abstract}`}
                   >
-                    <div className="poster-frame">
-                      <img
-                        src={`${import.meta.env.BASE_URL}${record.image_path}`}
-                        alt={record.abstract}
-                        loading="lazy"
-                      />
-                    </div>
                     <div className="poster-copy">
                       <p className="project-number">{record.project_number}</p>
                       <h3>{record.project_title}</h3>
-                      <p className="authors">{record.project_authors_display}</p>
                     </div>
                   </button>
                 ))}
               </div>
             </section>
           ))}
-        </div>
+          </div>
+        </section>
       </main>
 
       {selectedRecord ? (

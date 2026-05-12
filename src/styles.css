@@ -26,6 +26,7 @@ body,
 
 body {
   min-height: 100vh;
+  overflow: hidden;
   background:
     radial-gradient(circle at 18% 12%, rgba(248, 113, 113, 0.08), transparent 18%),
     radial-gradient(circle at 82% 10%, rgba(96, 165, 250, 0.08), transparent 16%),
@@ -43,8 +44,8 @@ button {
 
 button:focus-visible,
 a:focus-visible {
-  outline: 3px solid #ffffff;
-  outline-offset: 3px;
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 2px;
 }
 
 .app-shell {
@@ -65,7 +66,7 @@ a:focus-visible {
   position: absolute;
   border-radius: 999px;
   filter: blur(80px);
-  opacity: 0.6;
+  opacity: 0.42;
   pointer-events: none;
 }
 
@@ -96,30 +97,23 @@ a:focus-visible {
 .page {
   position: relative;
   z-index: 1;
-  width: min(1520px, calc(100% - 2rem));
-  margin: 0 auto;
-  padding: 1rem 0 4rem;
-}
-
-.site-header,
-.gallery-intro,
-.college-section,
-.poster-modal,
-.abstract-card {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(12, 8, 20, 0.72);
-  backdrop-filter: blur(18px);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .site-header {
+  position: relative;
+  z-index: 5;
   display: flex;
   align-items: center;
-  min-height: 96px;
-  padding: 1rem 1.5rem;
-  border-radius: 26px;
-  background:
-    linear-gradient(135deg, rgba(37, 21, 88, 0.9) 0%, rgba(75, 46, 131, 0.86) 55%, rgba(93, 59, 154, 0.86) 100%);
+  gap: 16px;
+  height: 68px;
+  padding: 0 22px;
+  background: linear-gradient(135deg, #251558 0%, #4b2e83 55%, #5d3b9a 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.32);
+  flex-shrink: 0;
 }
 
 .logo-link {
@@ -131,163 +125,164 @@ a:focus-visible {
 .site-logo {
   display: block;
   width: auto;
-  height: 58px;
-  max-width: min(100%, 540px);
+  height: 50px;
 }
 
-.gallery-intro {
-  margin-top: 1rem;
-  padding: 1.6rem 2rem 1.85rem;
-  border-radius: 28px;
+.header-summary {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.09);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  letter-spacing: 0.03em;
 }
 
-.eyebrow,
-.section-kicker,
-.project-number,
-.footer-label,
-.college-count {
-  margin: 0;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-size: 0.72rem;
+.gallery-board {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  padding: 12px;
+  overflow: auto;
 }
 
-.eyebrow,
-.section-kicker,
-.project-number {
-  color: #f6a0d0;
-}
-
-.college-count,
-.footer-label {
-  color: rgba(248, 242, 255, 0.64);
-}
-
-.gallery-intro h1,
-.college-section h2,
-.poster-copy h3,
-.modal-heading h2 {
-  margin: 0;
-}
-
-.gallery-intro h1 {
-  margin-top: 0.45rem;
-  max-width: 12ch;
-  font-size: clamp(2.8rem, 6vw, 5.8rem);
-  line-height: 0.95;
-}
-
-.intro-copy {
-  max-width: 44rem;
-  margin: 0.85rem 0 0;
-  color: rgba(248, 242, 255, 0.8);
-  font-size: 1.04rem;
+.board-frame {
+  position: absolute;
+  inset: 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.02)),
+    rgba(10, 7, 18, 0.38);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  pointer-events: none;
 }
 
 .college-groups {
+  position: relative;
+  z-index: 1;
   display: grid;
-  gap: 1.25rem;
-  margin-top: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+  align-content: start;
 }
 
 .college-section {
   position: relative;
-  padding: 1.4rem;
-  border-radius: 28px;
-  overflow: clip;
+  min-width: 0;
+  padding: 10px 10px 11px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018)),
+    rgba(8, 6, 14, 0.56);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
 .college-section::before {
   content: '';
   position: absolute;
   inset: 0 auto 0 0;
-  width: 6px;
+  width: 3px;
+  border-radius: 14px 0 0 14px;
   background: var(--college-accent);
-  box-shadow: 0 0 34px color-mix(in srgb, var(--college-accent) 65%, transparent);
+  box-shadow: 0 0 16px color-mix(in srgb, var(--college-accent) 55%, transparent);
 }
 
 .college-header {
   display: flex;
-  align-items: end;
+  align-items: start;
   justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding-left: 4px;
+}
+
+.section-kicker,
+.project-number,
+.college-count,
+.footer-label {
+  margin: 0;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  font-size: 0.64rem;
+}
+
+.section-kicker,
+.project-number {
+  color: var(--college-accent, #f6a0d0);
+}
+
+.college-count,
+.footer-label {
+  color: rgba(248, 242, 255, 0.5);
+}
+
+.college-header h2,
+.poster-copy h3,
+.modal-heading h2 {
+  margin: 0;
 }
 
 .college-header h2 {
-  margin-top: 0.4rem;
-  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  margin-top: 2px;
+  font-size: 0.9rem;
+  line-height: 1.12;
+  color: rgba(248, 242, 255, 0.94);
 }
 
 .poster-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 7px;
 }
 
 .poster-card {
-  display: grid;
-  gap: 0.85rem;
   width: 100%;
-  padding: 0.9rem;
+  min-width: 0;
+  padding: 9px 10px 10px;
   text-align: left;
   cursor: pointer;
-  border-radius: 22px;
-  border: 1px solid color-mix(in srgb, var(--college-accent) 68%, rgba(255, 255, 255, 0.18));
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--college-accent) 52%, rgba(255, 255, 255, 0.12));
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025)),
-    radial-gradient(circle at top, color-mix(in srgb, var(--college-accent) 18%, transparent), transparent 56%);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 18px 50px rgba(0, 0, 0, 0.25);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015)),
+    radial-gradient(circle at top left, color-mix(in srgb, var(--college-accent) 15%, transparent), transparent 70%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
   transition:
-    transform 180ms ease,
-    border-color 180ms ease,
-    box-shadow 180ms ease;
+    transform 140ms ease,
+    border-color 140ms ease,
+    background 140ms ease;
 }
 
 .poster-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--college-accent);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.1),
-    0 24px 60px rgba(0, 0, 0, 0.32);
-}
-
-.poster-frame {
-  aspect-ratio: 3 / 4;
-  border-radius: 16px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.poster-frame img,
-.modal-poster-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.poster-frame img {
-  object-fit: cover;
-  object-position: top center;
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--college-accent) 78%, rgba(255, 255, 255, 0.24));
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.02)),
+    radial-gradient(circle at top left, color-mix(in srgb, var(--college-accent) 22%, transparent), transparent 72%);
 }
 
 .poster-copy {
   display: grid;
-  gap: 0.45rem;
+  gap: 5px;
+  min-width: 0;
 }
 
 .poster-copy h3 {
-  font-size: 1.06rem;
-  line-height: 1.15;
-}
-
-.authors {
-  margin: 0;
-  color: rgba(248, 242, 255, 0.76);
-  font-size: 0.92rem;
-  line-height: 1.45;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 0.79rem;
+  line-height: 1.2;
+  color: rgba(248, 242, 255, 0.92);
 }
 
 .modal-backdrop {
@@ -296,8 +291,7 @@ a:focus-visible {
   z-index: 20;
   display: grid;
   place-items: stretch;
-  padding: 0;
-  background: rgba(4, 2, 10, 0.86);
+  background: rgba(4, 2, 10, 0.88);
 }
 
 .poster-modal {
@@ -305,26 +299,23 @@ a:focus-visible {
   grid-template-rows: auto minmax(0, 1fr) auto auto;
   width: 100vw;
   height: 100vh;
-  border-radius: 0;
-  border: none;
   background:
     radial-gradient(circle at top, rgba(126, 92, 255, 0.1), transparent 28%),
-    rgba(8, 5, 16, 0.96);
-  box-shadow: none;
+    rgba(8, 5, 16, 0.97);
 }
 
 .modal-topbar {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  gap: 1rem;
-  padding: 1.25rem 1.5rem 1rem;
+  gap: 12px;
+  padding: 14px 16px 10px;
 }
 
 .modal-heading h2 {
-  margin-top: 0.35rem;
+  margin-top: 4px;
   max-width: 18ch;
-  font-size: clamp(1.5rem, 2vw, 2.35rem);
+  font-size: clamp(1.3rem, 2vw, 2.2rem);
   line-height: 1.02;
 }
 
@@ -333,7 +324,7 @@ a:focus-visible {
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: rgba(255, 255, 255, 0.08);
   border-radius: 999px;
-  padding: 0.8rem 1.05rem;
+  padding: 0.75rem 1rem;
   cursor: pointer;
 }
 
@@ -344,22 +335,25 @@ a:focus-visible {
 
 .modal-image-wrap {
   min-height: 0;
-  padding: 0 1rem 1rem;
+  padding: 0 12px 12px;
 }
 
 .modal-poster-image {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   object-position: center;
-  border-radius: 22px;
+  border-radius: 20px;
   background: rgba(255, 255, 255, 0.04);
 }
 
 .modal-footer {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 12px;
   align-items: center;
-  padding: 0.85rem 1.5rem 1.1rem;
+  padding: 0.8rem 1rem 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(14, 10, 24, 0.88);
 }
@@ -369,7 +363,7 @@ a:focus-visible {
 }
 
 .modal-authors {
-  margin: 0.3rem 0 0;
+  margin: 0.35rem 0 0;
   color: rgba(248, 242, 255, 0.9);
 }
 
@@ -380,10 +374,12 @@ a:focus-visible {
 }
 
 .abstract-card {
-  margin: 0 1.5rem 1.5rem;
+  margin: 0 1rem 1rem;
   padding: 1rem 1.1rem 1.1rem;
-  border-radius: 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(18, 12, 32, 0.92);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
 }
 
 .abstract-card p:last-child {
@@ -392,84 +388,68 @@ a:focus-visible {
   line-height: 1.6;
 }
 
-@media (max-width: 900px) {
-  .page {
-    width: min(100% - 1rem, 1520px);
+@media (max-width: 1100px) {
+  body {
+    overflow: auto;
   }
 
-  .site-header,
-  .gallery-intro,
-  .college-section {
-    border-radius: 22px;
+  .gallery-board {
+    overflow: visible;
   }
 
-  .gallery-intro,
-  .college-section {
-    padding-left: 1.15rem;
-    padding-right: 1.15rem;
-  }
-
-  .college-header,
-  .modal-footer {
-    align-items: start;
-    flex-direction: column;
+  .college-groups {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 
   .poster-grid {
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-  }
-
-  .modal-topbar {
-    padding: 1rem 1rem 0.85rem;
-  }
-
-  .modal-image-wrap {
-    padding: 0 0.75rem 0.75rem;
-  }
-
-  .modal-footer {
-    padding: 0.85rem 1rem 1rem;
-  }
-
-  .abstract-card {
-    margin: 0 1rem 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   }
 }
 
-@media (max-width: 640px) {
-  .page {
-    padding-top: 0.85rem;
+@media (max-width: 760px) {
+  body {
+    overflow: auto;
   }
 
   .site-header {
-    min-height: 82px;
-    padding: 0.9rem 1rem;
+    height: 62px;
+    padding: 0 14px;
   }
 
   .site-logo {
     height: 44px;
   }
 
-  .gallery-intro h1 {
-    max-width: none;
-    font-size: clamp(2.2rem, 10vw, 3.4rem);
+  .header-summary {
+    font-size: 11px;
+    padding: 0 10px;
   }
 
-  .poster-grid {
+  .gallery-board {
+    padding: 10px;
+  }
+
+  .board-frame {
+    inset: 10px;
+  }
+
+  .college-groups {
     grid-template-columns: 1fr;
   }
 
-  .modal-heading h2 {
-    max-width: none;
+  .modal-topbar,
+  .modal-footer {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .modal-actions {
+    width: 100%;
   }
 
   .modal-close,
   .modal-action {
     width: 100%;
     text-align: center;
-  }
-
-  .modal-actions {
-    width: 100%;
   }
 }
